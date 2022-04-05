@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
-const url = "mongodb://localhost/vpn-test";
+const url =
+  "mongodb+srv://root:8SSOLVFRdRlNuO09@cluster0.6b6zh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 
 mongoose.connect(url);
 
@@ -13,4 +14,4 @@ const connection = () => {
     });
 };
 
-module.exports = { connection }
+module.exports = { connection };
